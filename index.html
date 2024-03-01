@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+---
+pagination:
+  data: apito.tasks
+  size: 10
+
+---
+{% assign state_ie5s-8036_pagination = pagination %}
+{% assign state_ie5s-8036_items = pagination.items %}
+{% assign state_ie5s-8036_pages = pagination.pages %}<!DOCTYPE html>
 <html lang="">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/css/index.css" />
+<link rel="stylesheet" href="/css/index-e777b495d184e6ccade283bf391172b1d60a2aa339c4f84635b82defaa985fcb.css" />
 
 
 <title></title>
@@ -11,22 +19,19 @@
 <meta name="og:title" property="og:title" content=""/>
 <meta name="og:description" property="og:description" content=""/>
 <meta name="og:image" property="og:image" content=""/>
-</head>
+<link href="https://fonts.googleapis.com" rel="preconnect" ><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin ></head>
 <body id="ie5s"><div id="i3wt">{% liquid
-    assign var_ijkd_35 = strapi.posts.data
+    assign var_ijkd_176 = apito.tasks
     %}
-    {% for state_ijkd___data in var_ijkd_35 %}
-  <div id="ijkd" class="fiche"><div id="iyjc1">Insert your text here</div><div id="ir9b" class="fiche-title">{% liquid
-    assign var_ir9b_31 = state_ijkd___data.attributes.Title
-    echo var_ir9b_31
+    {% for state_ijkd___data in var_ijkd_176 %}
+  <div id="ijkd" class="fiche"><div id="ir9b" class="fiche-title">{% liquid
+    assign var_ir9b_173 = state_ijkd___data.data.name
+    echo var_ir9b_173
   %}</div><div id="ibgap" class="fiche-subtitle">{% liquid
-    assign var_ibgap_32 = state_ijkd___data.attributes.Content
-    echo var_ibgap_32
+    assign var_ibgap_174 = state_ijkd___data.data.description.text
+    echo var_ibgap_174
   %}</div><div id="iv3dd" class="fiche-subtitle">{% liquid
-    assign var_iv3dd_33 = state_ijkd___data.attributes.Date
-    echo var_iv3dd_33
-  %}</div><div id="i8nbh" class="fiche-subtitle">{% liquid
-    assign var_i8nbh_34 = state_ijkd___data.attributes.createdAt
-    echo var_i8nbh_34
-  %}</div><div id="ipm6t" class="fiche-subtitle">phone: 244</div></div>{% endfor %}</div></body>
+    assign var_iv3dd_175 = state_ijkd___data.data.progress
+    echo var_iv3dd_175
+  %}</div></div>{% endfor %}</div></body>
 </html>

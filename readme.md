@@ -54,4 +54,4 @@ This website was setup with the following steps:
 
 * Create a new 11ty website according to 11ty documentation + the fetch plugin
 * Add Silex to the project according to Silex documentation + the 11ty plugin
-* Add strapi to the project according to strapi documentation + add strapi to Silex config, see `.silex.js`
+* Add strapi to the project according to strapi documentation + add strapi to Silex config, see `.silex-client.js`

@@ -4,19 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "silex": "silex -c `pwd`/.silex.js --debug --server-config=`pwd`/.silex-server.js --fs-root=`pwd` --fs-hosting-root=`pwd`",
+    "silex": "silex -c `pwd`/.silex-client.js -s `pwd`/.silex-server.js --fs-root=`pwd` --fs-hosting-root=`pwd` --debug true",
     "11ty": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "strapi": "cd strapi && npm run develop"
-
   },
   "author": "lexoyo",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0-alpha.5",
     "@11ty/eleventy-fetch": "^4.0.0",
-    "@silexlabs/silex": "^3.0.0-alpha.125",
-    "@silexlabs/silex-cms": "^0.0.12",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@silexlabs/silex": "^3.0.0-alpha.147",
+    "@silexlabs/silex-cms": "^0.0.89",
+    "grapesjs-blocks-flexbox": "^1.0.1",
+    "livereload": "^0.9.3",
     "node_modules-path": "^2.0.7"
   }
 }
